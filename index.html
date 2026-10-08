@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>­»´ä¤p¾Ç¥|¦~¯Å¤â¼g³y¥yAI¶EÂ_»P¼W¼í§U¤â</title>
+  <title>é¦™æ¸¯å°å­¸å››å¹´ç´šæ‰‹å¯«é€ å¥AIè¨ºæ–·èˆ‡å¢æ½¤åŠ©æ‰‹</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Icons -->
@@ -24,14 +24,14 @@
       <div class="flex items-center space-x-3">
         <i class="fa-solid fa-wand-magic-sparkles text-2xl text-yellow-300"></i>
         <div>
-          <h1 class="text-xl font-bold tracking-wide">¤p¥|¤¤¤å»y¹Ò³y¥y AI §U¤â</h1>
-          <p class="text-xs text-teal-100">¤â¼g¿ëÃÑ ¡P ¥y·N¶EÂ_ ¡P µü¥y¼W¼í</p>
+          <h1 class="text-xl font-bold tracking-wide">å°å››ä¸­æ–‡èªå¢ƒé€ å¥ AI åŠ©æ‰‹</h1>
+          <p class="text-xs text-teal-100">æ‰‹å¯«è¾¨è­˜ Â· å¥æ„è¨ºæ–· Â· è©å¥å¢æ½¤</p>
         </div>
       </div>
-      <!-- ³]©w API Key «ö¶s -->
+      <!-- è¨­å®š API Key æŒ‰éˆ• -->
       <button onclick="openApiKeyModal()" class="bg-teal-700 hover:bg-teal-800 text-xs px-3 py-2 rounded-lg flex items-center transition">
         <i class="fa-solid fa-key mr-1.5 text-yellow-300"></i>
-        <span id="api-status-text">ÀË¬d API Key</span>
+        <span id="api-status-text">æª¢æŸ¥ API Key</span>
       </button>
     </div>
   </header>
@@ -42,9 +42,9 @@
     <!-- Upload & Capture Card -->
     <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100">
       <h2 class="text-lg font-bold text-gray-800 mb-2 flex items-center">
-        <i class="fa-solid fa-camera text-teal-600 mr-2"></i> ¤W¶Ç¾Ç¥Í¤â¼g¥y¤l·Ó¤ù
+        <i class="fa-solid fa-camera text-teal-600 mr-2"></i> ä¸Šå‚³å­¸ç”Ÿæ‰‹å¯«å¥å­ç…§ç‰‡
       </h2>
-      <p class="text-xs text-gray-500 mb-4">©ç·Ó©Î¤W¶Ç¾Ç¥Í¤â¼g§@·~·Ó¤ù¡AAI ±N·|¦Û°Ê¤ÀªR¦r§Î¡B¥y·N¨Ã´£¨Ñ¼W¼í«ØÄ³¡C</p>
+      <p class="text-xs text-gray-500 mb-4">æ‹ç…§æˆ–ä¸Šå‚³å­¸ç”Ÿæ‰‹å¯«ä½œæ¥­ç…§ç‰‡ï¼ŒAI å°‡æœƒè‡ªå‹•åˆ†æå­—å½¢ã€å¥æ„ä¸¦æä¾›å¢æ½¤å»ºè­°ã€‚</p>
 
       <!-- Upload Drop Area -->
       <div id="drop-zone" onclick="document.getElementById('image-input').click()" 
@@ -55,13 +55,13 @@
             <i class="fa-solid fa-cloud-arrow-up"></i>
           </div>
           <div>
-            <p class="text-sm font-semibold text-gray-700">ÂIÀ»¿ï¾Ü¬Û¤ù / ©çÄá§@·~</p>
-            <p class="text-xs text-gray-400 mt-1">¤ä´© JPG, PNG ®æ¦¡</p>
+            <p class="text-sm font-semibold text-gray-700">é»æ“Šé¸æ“‡ç›¸ç‰‡ / æ‹æ”ä½œæ¥­</p>
+            <p class="text-xs text-gray-400 mt-1">æ”¯æ´ JPG, PNG æ ¼å¼</p>
           </div>
         </div>
         <!-- Image Preview -->
         <div id="preview-container" class="hidden relative">
-          <img id="image-preview" src="" alt="¹wÄı¹Ï¤ù" class="max-h-64 mx-auto rounded-lg shadow-sm border border-gray-200">
+          <img id="image-preview" src="" alt="é è¦½åœ–ç‰‡" class="max-h-64 mx-auto rounded-lg shadow-sm border border-gray-200">
           <button onclick="removeImage(event)" class="absolute top-2 right-2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center shadow hover:bg-red-600 transition">
             <i class="fa-solid fa-xmark"></i>
           </button>
@@ -71,7 +71,7 @@
       <!-- Analyze Button -->
       <button id="analyze-btn" onclick="startAnalysis()" disabled 
               class="w-full mt-5 bg-teal-600 hover:bg-teal-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white font-bold py-3 px-4 rounded-xl shadow transition flex items-center justify-center text-base">
-        <i class="fa-solid fa-magnifying-glass-chart mr-2"></i> ¶}©l AI ¿ëÃÑ»P¶EÂ_¼W¼í
+        <i class="fa-solid fa-magnifying-glass-chart mr-2"></i> é–‹å§‹ AI è¾¨è­˜èˆ‡è¨ºæ–·å¢æ½¤
       </button>
     </div>
 
@@ -79,8 +79,8 @@
     <div id="loading-box" class="hidden bg-white rounded-2xl shadow-md p-8 text-center space-y-4">
       <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-teal-500 border-t-transparent"></div>
       <div>
-        <p class="text-base font-bold text-gray-800" id="loading-step">AI ¥¿¦b¿ëÃÑ¤â¼g¦rÅé...</p>
-        <p class="text-xs text-gray-500 mt-1">¥¿®Ú¾Ú­»´ä¤p¾Ç¥|¦~¯Å¤¤¤å½Òµ{¼Ğ·Ç¶i¦æ¤ÀªR</p>
+        <p class="text-base font-bold text-gray-800" id="loading-step">AI æ­£åœ¨è¾¨è­˜æ‰‹å¯«å­—é«”...</p>
+        <p class="text-xs text-gray-500 mt-1">æ­£æ ¹æ“šé¦™æ¸¯å°å­¸å››å¹´ç´šä¸­æ–‡èª²ç¨‹æ¨™æº–é€²è¡Œåˆ†æ</p>
       </div>
     </div>
 
@@ -91,8 +91,8 @@
       <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-blue-500">
         <div class="flex items-center justify-between mb-3">
           <h3 class="font-bold text-gray-800 text-md flex items-center">
-            <span class="bg-blue-100 text-blue-700 text-xs px-2.5 py-1 rounded-full font-bold mr-2">¨BÆJ 1</span>
-            ¤â¼g¦r¿ëÃÑµ²ªG (OCR)
+            <span class="bg-blue-100 text-blue-700 text-xs px-2.5 py-1 rounded-full font-bold mr-2">æ­¥é©Ÿ 1</span>
+            æ‰‹å¯«å­—è¾¨è­˜çµæœ (OCR)
           </h3>
         </div>
         <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 text-gray-800 text-lg font-medium tracking-wide" id="ocr-result-text">
@@ -103,19 +103,19 @@
       <!-- Step 2: Error Correction & Diagnosis -->
       <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-amber-500 space-y-4">
         <h3 class="font-bold text-gray-800 text-md flex items-center">
-          <span class="bg-amber-100 text-amber-700 text-xs px-2.5 py-1 rounded-full font-bold mr-2">¨BÆJ 2</span>
-          ¿ù§O¦r¤Î»y¯f¶EÂ_»P­q¥¿
+          <span class="bg-amber-100 text-amber-700 text-xs px-2.5 py-1 rounded-full font-bold mr-2">æ­¥é©Ÿ 2</span>
+          éŒ¯åˆ¥å­—åŠèªç—…è¨ºæ–·èˆ‡è¨‚æ­£
         </h3>
         
         <div>
-          <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">­×¥¿«á¤§¼Ğ·Ç­ì¥y</span>
+          <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">ä¿®æ­£å¾Œä¹‹æ¨™æº–åŸå¥</span>
           <div class="bg-amber-50 p-3.5 rounded-xl border border-amber-200 text-amber-900 font-semibold text-md mt-1" id="corrected-sentence">
             --
           </div>
         </div>
 
         <div>
-          <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">¸Ô²Ó¤ÀªR¡]¿ù§O¦r / »y¯f / µü¸q¡^</span>
+          <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">è©³ç´°åˆ†æï¼ˆéŒ¯åˆ¥å­— / èªç—… / è©ç¾©ï¼‰</span>
           <p class="text-sm text-gray-700 mt-1 leading-relaxed bg-gray-50 p-3.5 rounded-xl border border-gray-200" id="error-diagnosis">
             --
           </p>
@@ -125,14 +125,14 @@
       <!-- Step 3: Sentence Enrichment (P4 Standard) -->
       <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-emerald-500 space-y-4">
         <h3 class="font-bold text-gray-800 text-md flex items-center">
-          <span class="bg-emerald-100 text-emerald-700 text-xs px-2.5 py-1 rounded-full font-bold mr-2">¨BÆJ 3</span>
-          ¤p¥|¯Å¥y¤l¼W¼í¡]¼g§@¤É¯Å¡^
+          <span class="bg-emerald-100 text-emerald-700 text-xs px-2.5 py-1 rounded-full font-bold mr-2">æ­¥é©Ÿ 3</span>
+          å°å››ç´šå¥å­å¢æ½¤ï¼ˆå¯«ä½œå‡ç´šï¼‰
         </h3>
 
         <!-- Level 1: Vivid Description -->
         <div class="bg-emerald-50/60 p-4 rounded-xl border border-emerald-200">
           <div class="flex items-center text-emerald-800 font-bold text-sm mb-1">
-            <i class="fa-solid fa-feather-pointed mr-2"></i> 1. ¥Í°Ê¦nµü¼W¼íª©¡]¥[¤J·P©x»P°ÊºA´y¼g¡^
+            <i class="fa-solid fa-feather-pointed mr-2"></i> 1. ç”Ÿå‹•å¥½è©å¢æ½¤ç‰ˆï¼ˆåŠ å…¥æ„Ÿå®˜èˆ‡å‹•æ…‹æå¯«ï¼‰
           </div>
           <p class="text-base font-semibold text-emerald-950 mt-1" id="enrichment-vivid">--</p>
         </div>
@@ -140,7 +140,7 @@
         <!-- Level 2: Rhetoric & Structure -->
         <div class="bg-teal-50/60 p-4 rounded-xl border border-teal-200">
           <div class="flex items-center text-teal-800 font-bold text-sm mb-1">
-            <i class="fa-solid fa-graduation-cap mr-2"></i> 2. ¤p¥|­×Ãã¤É¯Åª©¡]¹B¥Î¤ñ³ë / ÀÀ¤H / ÃöÁpµü¥y«¬¡^
+            <i class="fa-solid fa-graduation-cap mr-2"></i> 2. å°å››ä¿®è¾­å‡ç´šç‰ˆï¼ˆé‹ç”¨æ¯”å–» / æ“¬äºº / é—œè¯è©å¥å‹ï¼‰
           </div>
           <p class="text-base font-semibold text-teal-950 mt-1" id="enrichment-rhetoric">--</p>
         </div>
@@ -149,7 +149,7 @@
       <!-- Step 4: Teacher Encouragement Feedback -->
       <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-purple-500">
         <h3 class="font-bold text-gray-800 text-md flex items-center mb-2">
-          <i class="fa-solid fa-comment-dots text-purple-600 mr-2"></i> ¦Ñ®v¿Ë¤Áµû»y
+          <i class="fa-solid fa-comment-dots text-purple-600 mr-2"></i> è€å¸«è¦ªåˆ‡è©•èª
         </h3>
         <p class="text-sm text-purple-900 bg-purple-50 p-4 rounded-xl border border-purple-200 leading-relaxed font-medium" id="teacher-feedback">
           --
@@ -159,10 +159,10 @@
       <!-- Action Buttons -->
       <div class="flex space-x-3">
         <button onclick="window.print()" class="flex-1 bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 rounded-xl transition text-sm flex items-center justify-center">
-          <i class="fa-solid fa-print mr-2"></i> ¦C¦L / Àx¦s¤ÀªRµ²ªG
+          <i class="fa-solid fa-print mr-2"></i> åˆ—å° / å„²å­˜åˆ†æçµæœ
         </button>
         <button onclick="resetApp()" class="flex-1 bg-teal-100 hover:bg-teal-200 text-teal-800 font-bold py-3 rounded-xl transition text-sm flex items-center justify-center">
-          <i class="fa-solid fa-rotate-left mr-2"></i> ¶EÂ_¤U¤@±i§@·~
+          <i class="fa-solid fa-rotate-left mr-2"></i> è¨ºæ–·ä¸‹ä¸€å¼µä½œæ¥­
         </button>
       </div>
 
@@ -175,7 +175,7 @@
     <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
       <div class="flex justify-between items-center">
         <h3 class="font-bold text-gray-800 text-lg flex items-center">
-          <i class="fa-solid fa-key text-teal-600 mr-2"></i> ³]©w AI ªA°È»P API Key
+          <i class="fa-solid fa-key text-teal-600 mr-2"></i> è¨­å®š AI æœå‹™èˆ‡ API Key
         </h3>
         <button onclick="closeApiKeyModal()" class="text-gray-400 hover:text-gray-600">
           <i class="fa-solid fa-xmark text-xl"></i>
@@ -183,9 +183,9 @@
       </div>
 
       <div>
-        <label class="block text-xs font-bold text-gray-700 mb-1">¿ï¾Ü AI ªA°È°Ó</label>
+        <label class="block text-xs font-bold text-gray-700 mb-1">é¸æ“‡ AI æœå‹™å•†</label>
         <select id="api-provider-select" onchange="toggleProviderFields()" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:outline-none text-sm font-medium">
-          <option value="silicon">SiliconFlow (Öº°ò¬y°Ê - Qwen2-VL)</option>
+          <option value="silicon">SiliconFlow (ç¡…åŸºæµå‹• - Qwen2-VL)</option>
           <option value="gemini">Google Gemini (Gemini 1.5 Flash)</option>
         </select>
       </div>
@@ -197,21 +197,21 @@
       </div>
 
       <div id="silicon-model-box">
-        <label class="block text-xs font-bold text-gray-700 mb-1">SiliconFlow µøÄ±¼Ò«¬</label>
+        <label class="block text-xs font-bold text-gray-700 mb-1">SiliconFlow è¦–è¦ºæ¨¡å‹</label>
         <select id="silicon-model-select" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:outline-none text-sm">
-          <option value="Qwen/Qwen2-VL-72B-Instruct">Qwen2-VL-72B (°ªºë·Ç«×±ÀÂË)</option>
-          <option value="Qwen/Qwen2-VL-7B-Instruct">Qwen2-VL-7B (§Ö³t)</option>
+          <option value="Qwen/Qwen2-VL-72B-Instruct">Qwen2-VL-72B (é«˜ç²¾æº–åº¦æ¨è–¦)</option>
+          <option value="Qwen/Qwen2-VL-7B-Instruct">Qwen2-VL-7B (å¿«é€Ÿ)</option>
         </select>
       </div>
 
       <div class="bg-amber-50 p-3 rounded-lg border border-amber-200 text-xs text-amber-800 space-y-1">
-        <p class="font-bold" id="provider-tip-title"><i class="fa-solid fa-lightbulb mr-1"></i> §K­«½Æ¿é¤J´£¥Ü</p>
-        <p id="provider-tip-desc">API Key Àx¦s«á±N·|¦Û°Ê«O¦s¦b±zªºÂsÄı¾¹¤¤¡A¤U¦¸¨Ï¥ÎµL»İ¦A¦¸¿é¤J¡C</p>
+        <p class="font-bold" id="provider-tip-title"><i class="fa-solid fa-lightbulb mr-1"></i> å…é‡è¤‡è¼¸å…¥æç¤º</p>
+        <p id="provider-tip-desc">API Key å„²å­˜å¾Œå°‡æœƒè‡ªå‹•ä¿å­˜åœ¨æ‚¨çš„ç€è¦½å™¨ä¸­ï¼Œä¸‹æ¬¡ä½¿ç”¨ç„¡éœ€å†æ¬¡è¼¸å…¥ã€‚</p>
       </div>
 
       <div class="flex space-x-2 pt-2">
         <button onclick="saveApiKey()" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2.5 rounded-lg transition text-sm">
-          Àx¦s³]©w
+          å„²å­˜è¨­å®š
         </button>
       </div>
     </div>
@@ -219,11 +219,11 @@
 
   <script>
     // =========================================================================
-    // ¹w³] API Key ³]©w°Ï¡]¦pªG¦b¦¹ª½±µ¶ñ¤J Key¡A¨Ï¥ÎªÌ¥´¶}ºô­¶§Y§¹¥şµL»İ¤â°Ê¿é¤J¡^
+    // é è¨­ API Key è¨­å®šå€ï¼ˆå¦‚æœåœ¨æ­¤ç›´æ¥å¡«å…¥ Keyï¼Œä½¿ç”¨è€…æ‰“é–‹ç¶²é å³å®Œå…¨ç„¡éœ€æ‰‹å‹•è¼¸å…¥ï¼‰
     // =========================================================================
-    const DEFAULT_PROVIDER = 'silicon'; // ¥i¿ï: 'silicon' ©Î 'gemini'
-    const DEFAULT_SILICON_KEY = '';     // ¨Ò¦p: 'sk-xxxxxxxx'
-    const DEFAULT_GEMINI_KEY = '';      // ¨Ò¦p: 'AIzaSyxxxxxx'
+    const DEFAULT_PROVIDER = 'silicon'; // å¯é¸: 'silicon' æˆ– 'gemini'
+    const DEFAULT_SILICON_KEY = '';     // ä¾‹å¦‚: 'sk-xxxxxxxx'
+    const DEFAULT_GEMINI_KEY = '';      // ä¾‹å¦‚: 'AIzaSyxxxxxx'
     const DEFAULT_SILICON_MODEL = 'Qwen/Qwen2-VL-72B-Instruct';
 
     let base64ImageData = null;
@@ -265,16 +265,16 @@
 
       if (provider === 'silicon') {
         keyLabel.innerText = 'SiliconFlow API Key (sk-...)';
-        keyInput.placeholder = DEFAULT_SILICON_KEY ? '¨Ï¥Î¹w³] Key ¤¤...' : 'sk-...';
+        keyInput.placeholder = DEFAULT_SILICON_KEY ? 'ä½¿ç”¨é è¨­ Key ä¸­...' : 'sk-...';
         modelBox.classList.remove('hidden');
-        tipTitle.innerHTML = '<i class="fa-solid fa-lightbulb mr-1"></i> §K­«½Æ¿é¤J¾÷¨î';
-        tipDesc.innerText = '¤w±Ò¥ÎÂsÄı¾¹°O¾Ğ¾÷¨î¡C¥u­n¿é¤J¹L¤@¦¸Àx¦s¡A«áÄò¨Ï¥Î§¡·|¦Û°Ê±a¤J¡C';
+        tipTitle.innerHTML = '<i class="fa-solid fa-lightbulb mr-1"></i> å…é‡è¤‡è¼¸å…¥æ©Ÿåˆ¶';
+        tipDesc.innerText = 'å·²å•Ÿç”¨ç€è¦½å™¨è¨˜æ†¶æ©Ÿåˆ¶ã€‚åªè¦è¼¸å…¥éä¸€æ¬¡å„²å­˜ï¼Œå¾ŒçºŒä½¿ç”¨å‡æœƒè‡ªå‹•å¸¶å…¥ã€‚';
       } else {
         keyLabel.innerText = 'Gemini API Key (AIzaSy...)';
-        keyInput.placeholder = DEFAULT_GEMINI_KEY ? '¨Ï¥Î¹w³] Key ¤¤...' : 'AIzaSy...';
+        keyInput.placeholder = DEFAULT_GEMINI_KEY ? 'ä½¿ç”¨é è¨­ Key ä¸­...' : 'AIzaSy...';
         modelBox.classList.add('hidden');
-        tipTitle.innerHTML = '<i class="fa-solid fa-lightbulb mr-1"></i> §K­«½Æ¿é¤J¾÷¨î';
-        tipDesc.innerText = '¤w±Ò¥ÎÂsÄı¾¹°O¾Ğ¾÷¨î¡C¥u­n¿é¤J¹L¤@¦¸Àx¦s¡A«áÄò¨Ï¥Î§¡·|¦Û°Ê±a¤J¡C';
+        tipTitle.innerHTML = '<i class="fa-solid fa-lightbulb mr-1"></i> å…é‡è¤‡è¼¸å…¥æ©Ÿåˆ¶';
+        tipDesc.innerText = 'å·²å•Ÿç”¨ç€è¦½å™¨è¨˜æ†¶æ©Ÿåˆ¶ã€‚åªè¦è¼¸å…¥éä¸€æ¬¡å„²å­˜ï¼Œå¾ŒçºŒä½¿ç”¨å‡æœƒè‡ªå‹•å¸¶å…¥ã€‚';
       }
     }
 
@@ -285,10 +285,10 @@
 
       if (statusText) {
         if (activeKey) {
-          statusText.innerText = `${provider === 'silicon' ? 'SiliconFlow' : 'Gemini'} ¤w´Nºü`;
+          statusText.innerText = `${provider === 'silicon' ? 'SiliconFlow' : 'Gemini'} å·²å°±ç·’`;
           statusText.classList.add('text-yellow-200');
         } else {
-          statusText.innerText = '¥¼³]©w Key';
+          statusText.innerText = 'æœªè¨­å®š Key';
           statusText.classList.remove('text-yellow-200');
         }
       }
@@ -357,13 +357,13 @@
       const apiKey = getActiveApiKey(provider);
 
       if (!apiKey) {
-        alert(`½Ğ¥ı³]©w ${provider === 'silicon' ? 'SiliconFlow' : 'Gemini'} API Key¡I`);
+        alert(`è«‹å…ˆè¨­å®š ${provider === 'silicon' ? 'SiliconFlow' : 'Gemini'} API Keyï¼`);
         openApiKeyModal();
         return;
       }
 
       if (!base64ImageData) {
-        alert('½Ğ¥ı¤W¶Ç¾Ç¥Í¤â¼g¬Û¤ù¡I');
+        alert('è«‹å…ˆä¸Šå‚³å­¸ç”Ÿæ‰‹å¯«ç›¸ç‰‡ï¼');
         return;
       }
 
@@ -371,14 +371,14 @@
       document.getElementById('result-box').classList.add('hidden');
       document.getElementById('analyze-btn').disabled = true;
 
-      const promptSystem = `§A¬O­»´ä¤p¾Ç¥|¦~¯Å¸ê²`¤¤¤å¬ì¦Ñ®v¡C½Ğ¤ÀªR¾Ç¥Í¤W¶Çªº¤â¼g³y¥y¹Ï¤ù¡A¨ÃÄY®æ¥H¯Â JSON ®æ¦¡¦^À³¡]¤£­n²K¥[ markdown ©ÎÃB¥~¤å¦r¡^¡A®æ¦¡¦p¤U¡G
+      const promptSystem = `ä½ æ˜¯é¦™æ¸¯å°å­¸å››å¹´ç´šè³‡æ·±ä¸­æ–‡ç§‘è€å¸«ã€‚è«‹åˆ†æå­¸ç”Ÿä¸Šå‚³çš„æ‰‹å¯«é€ å¥åœ–ç‰‡ï¼Œä¸¦åš´æ ¼ä»¥ç´” JSON æ ¼å¼å›æ‡‰ï¼ˆä¸è¦æ·»åŠ  markdown æˆ–é¡å¤–æ–‡å­—ï¼‰ï¼Œæ ¼å¼å¦‚ä¸‹ï¼š
 {
-  "ocr_text": "¿ëÃÑ¨ìªº¾Ç¥Í¤â¼g§¹¾ã­ì¥y¡]ÁcÅé¤¤¤å¡^",
-  "corrected_sentence": "­×¥¿¿ù§O¦r¤Î»y¯f«áªº¼Ğ·Ç­ì¥y",
-  "error_diagnosis": "¸Ô²Ó¤ÀªR¥y¤¤ªº¿ù§O¦r¡]«ü¥X¿ù¦b­ş¸Ì¡^¡B»y¯f©Îµü¸q¤£·í¤§³B¡C­YµL¿ù»~½Ğµ¹¤©Æg½à¡C",
-  "enrichment_vivid": "¤p¥|¯Å¥Í°Ê¦nµü¼W¼íª©¡]¥[¤J·P©x´y¼g¡B­×¹¢µü©Î°ÊºA§Î®e¡^",
-  "enrichment_rhetoric": "¤p¥|¯Å­×Ãã¤É¯Åª©¡]¹B¥Î¤p¥|½Òµ{±`¨£­×Ãã¦p¤ñ³ë¡BÀÀ¤H¡B±Æ¤ñ©ÎÃöÁpµü¡A¦p¡yÁöµM¡K¡K¦ı¬O¡K¡K¡z¡B¡y¹³¡K¡K¤@¼Ë¡z¡^",
-  "teacher_feedback": "¤@¬q¿Ë¤Á¡B¹ªÀy©Êªº¦Ñ®vµû»y¡A¾A¦X¤p¥|¾Ç¥Í¾\Åª¡C"
+  "ocr_text": "è¾¨è­˜åˆ°çš„å­¸ç”Ÿæ‰‹å¯«å®Œæ•´åŸå¥ï¼ˆç¹é«”ä¸­æ–‡ï¼‰",
+  "corrected_sentence": "ä¿®æ­£éŒ¯åˆ¥å­—åŠèªç—…å¾Œçš„æ¨™æº–åŸå¥",
+  "error_diagnosis": "è©³ç´°åˆ†æå¥ä¸­çš„éŒ¯åˆ¥å­—ï¼ˆæŒ‡å‡ºéŒ¯åœ¨å“ªè£¡ï¼‰ã€èªç—…æˆ–è©ç¾©ä¸ç•¶ä¹‹è™•ã€‚è‹¥ç„¡éŒ¯èª¤è«‹çµ¦äºˆè®šè³ã€‚",
+  "enrichment_vivid": "å°å››ç´šç”Ÿå‹•å¥½è©å¢æ½¤ç‰ˆï¼ˆåŠ å…¥æ„Ÿå®˜æå¯«ã€ä¿®é£¾è©æˆ–å‹•æ…‹å½¢å®¹ï¼‰",
+  "enrichment_rhetoric": "å°å››ç´šä¿®è¾­å‡ç´šç‰ˆï¼ˆé‹ç”¨å°å››èª²ç¨‹å¸¸è¦‹ä¿®è¾­å¦‚æ¯”å–»ã€æ“¬äººã€æ’æ¯”æˆ–é—œè¯è©ï¼Œå¦‚ã€é›–ç„¶â€¦â€¦ä½†æ˜¯â€¦â€¦ã€ã€ã€åƒâ€¦â€¦ä¸€æ¨£ã€ï¼‰",
+  "teacher_feedback": "ä¸€æ®µè¦ªåˆ‡ã€é¼“å‹µæ€§çš„è€å¸«è©•èªï¼Œé©åˆå°å››å­¸ç”Ÿé–±è®€ã€‚"
 }`;
 
       try {
@@ -408,7 +408,7 @@
           });
 
           const data = await response.json();
-          if (data.error) throw new Error(data.error.message || 'SiliconFlow API ©I¥s¥¢±Ñ');
+          if (data.error) throw new Error(data.error.message || 'SiliconFlow API å‘¼å«å¤±æ•—');
           jsonString = data.choices[0].message.content;
 
         } else {
@@ -427,14 +427,14 @@
           });
 
           const data = await response.json();
-          if (data.error) throw new Error(data.error.message || 'Gemini API ©I¥s¥¢±Ñ');
+          if (data.error) throw new Error(data.error.message || 'Gemini API å‘¼å«å¤±æ•—');
           jsonString = data.candidates[0].content.parts[0].text;
         }
 
         const cleanedText = jsonString.replace(/```json/g, '').replace(/```/g, '').trim();
         const result = JSON.parse(cleanedText);
 
-        document.getElementById('ocr-result-text').innerText = result.ocr_text || '¥¼¯à¿ëÃÑ¦rµü';
+        document.getElementById('ocr-result-text').innerText = result.ocr_text || 'æœªèƒ½è¾¨è­˜å­—è©';
         document.getElementById('corrected-sentence').innerText = result.corrected_sentence || '--';
         document.getElementById('error-diagnosis').innerText = result.error_diagnosis || '--';
         document.getElementById('enrichment-vivid').innerText = result.enrichment_vivid || '--';
@@ -446,7 +446,7 @@
         document.getElementById('result-box').scrollIntoView({ behavior: 'smooth' });
 
       } catch (err) {
-        alert('¤ÀªR¥¢±Ñ¡G' + err.message);
+        alert('åˆ†æå¤±æ•—ï¼š' + err.message);
         document.getElementById('loading-box').classList.add('hidden');
       } finally {
         document.getElementById('analyze-btn').disabled = false;
@@ -457,6 +457,6 @@
 </html>
 ```
 
-### ¨Ï¥Î»¡©ú¡G
-1. **²Ä¤@¦¸¿é¤J§Y°O¾Ğ**¡G¥u­n¿é¤J¨ÃÂIÀ»¤@¦¸¡uÀx¦s³]©w¡v¡AÂsÄı¾¹´N·|«ù¤[°O¿ı¡A©¹«á¨Ï¥Î¸ÓÂsÄı¾¹¶}±Ò®É§¡¤£»İ­n­«·s¿é¤J¡C
-2. **§K¿é¤J¹w³] key (¥i¿ï)**¡G¦pªG±z·Qµ¹¨ä¥L¤H¨Ï¥Î¥B§¹¥ş¤£Åı¥L­Ì¿é¤J¡A¥i¥H¦bµ{¦¡½X²Ä 198~199 ¦æ±N±zªº API Key ¶ñ¤J `DEFAULT_SILICON_KEY = 'sk-...'` ©Î `DEFAULT_GEMINI_KEY = 'AIzaSy...'` ¤¤§Y¥i¡I
+### ä½¿ç”¨èªªæ˜ï¼š
+1. **ç¬¬ä¸€æ¬¡è¼¸å…¥å³è¨˜æ†¶**ï¼šåªè¦è¼¸å…¥ä¸¦é»æ“Šä¸€æ¬¡ã€Œå„²å­˜è¨­å®šã€ï¼Œç€è¦½å™¨å°±æœƒæŒä¹…è¨˜éŒ„ï¼Œå¾€å¾Œä½¿ç”¨è©²ç€è¦½å™¨é–‹å•Ÿæ™‚å‡ä¸éœ€è¦é‡æ–°è¼¸å…¥ã€‚
+2. **å…è¼¸å…¥é è¨­ key (å¯é¸)**ï¼šå¦‚æœæ‚¨æƒ³çµ¦å…¶ä»–äººä½¿ç”¨ä¸”å®Œå…¨ä¸è®“ä»–å€‘è¼¸å…¥ï¼Œå¯ä»¥åœ¨ç¨‹å¼ç¢¼ç¬¬ 198~199 è¡Œå°‡æ‚¨çš„ API Key å¡«å…¥ `DEFAULT_SILICON_KEY = 'sk-...'` æˆ– `DEFAULT_GEMINI_KEY = 'AIzaSy...'` ä¸­å³å¯ï¼
